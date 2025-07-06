@@ -1,0 +1,1 @@
+// This file is created for stoaring locators on test pages
