@@ -1,12 +1,40 @@
-# Node.js
+# Node modules
 node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+
+# Build output
 dist/
-coverage/
-.env
-.DS_Store
-*.local
-playwright-report/
+build/
+*.tsbuildinfo
+
+# TypeScript artifacts (if you're compiling)
+*.js
+*.js.map
+*.d.ts
+
+# Logs
+logs/
+*.log
+
+# Playwright outputs
 test-results/
+playwright-report/
+videos/
+screenshots/
+
+# VSCode settings
+.vscode/
+
+# Environment files
+.env
+.env.local
+.env.*
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Optional: Ignore npm/yarn lock if not committing them
+# package-lock.json
+# yarn.lock
