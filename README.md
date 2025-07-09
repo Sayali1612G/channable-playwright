@@ -23,6 +23,13 @@ This is a **Playwright-based test automation framework** built for the Channable
    ```
 
 4. **Run all tests**
+   ```Run Browser Test case
+   npx ts-node tests/pricingbrowser.spec.ts
+   ```
+   ```Run headless Test case
+   npm test pricingheadless.spec.ts
+   ```
+   or
    ```bash
    npx playwright test
    ```
@@ -38,10 +45,12 @@ This is a **Playwright-based test automation framework** built for the Channable
 ```bash
 channable-playwright/
 │
-├── tests/                 # Test scripts
-├── pages/                 # Page Object Models (POM)
-├── playwright.config.js   # Playwright configuration
-├── package.json           # Project dependencies and scripts
-└── README.md              # Project documentation
+├── tests/                   # Test scripts
+|----pricingbrowser.spec.ts  # For running Test scripts on actual browser
+|----pricingheadless.spec.ts # For running Test scripts on headless browser
+├── locators/                # Page Object Models (POM)
+├── playwright.config.js     # Playwright configuration
+├── package.json             # Project dependencies and scripts
+└── README.md                # Project documentation
 ```
 -------------------------------------------------------------------
